@@ -1,13 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react'
+import Header from './Header.js'
+import MemeGenerator from './MemeGenerator'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        kjhk
-      </div>
-    );
-  }
+/** Header will only display things
+ * MemeGenerator will be calling to an API and holding on to data
+ * Each should be in their own file of the same name*/
+
+ function App(){
+    return(
+        <div>
+            <Header/>
+            <MemeGenerator/>
+        </div>
+
+    )
 }
-
-export default App;
+export default App
